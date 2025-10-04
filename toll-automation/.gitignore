@@ -1,0 +1,10 @@
+node_modules
+.env
+playwright-report
+playwright/.cache
+data/
+!data/.gitkeep
+storage
+*.log
+dist
+.DS_Store

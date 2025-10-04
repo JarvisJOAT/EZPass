@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toll Statement Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Toll Statement Dashboard</h1>
+      <div class="actions">
+        <button id="run-fetch">Fetch Latest Statements</button>
+        <span id="status">Status: idle</span>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Totals by Plate</h2>
+        <table id="plate-summary">
+          <thead>
+            <tr>
+              <th>Plate</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Totals by Transponder</h2>
+        <table id="transponder-summary">
+          <thead>
+            <tr>
+              <th>Transponder</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Transactions</h2>
+        <table id="transactions">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Provider</th>
+              <th>Plate</th>
+              <th>Transponder</th>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
